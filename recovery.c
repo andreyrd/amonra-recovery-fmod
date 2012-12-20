@@ -1552,7 +1552,6 @@ prompt_and_wait()
                 case ITEM_CONSOLE:
                     ui_print("\n");
 		    do_reboot = 0;
-		    execv("/sbin/vtspawn", NULL);
                     gr_exit();
                     break;
 
