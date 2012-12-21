@@ -331,6 +331,7 @@ handle_update_package(const char *path, ZipArchive *zip)
     }
     } else {
         ui_print("Skipping signature verification...");
+        ui_set_progress(0.5);
     }
 
     // Update should take the rest of the progress bar.
